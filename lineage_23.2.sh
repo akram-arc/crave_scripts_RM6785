@@ -30,8 +30,6 @@ echo "======= Export Done ======"
 source build/envsetup.sh
 echo "============="
 
-# Lunch
-breakfast RM6785
 
 # Build
 brunch RM6785
