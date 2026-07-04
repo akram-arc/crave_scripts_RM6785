@@ -36,6 +36,10 @@ echo "======= Export Done ======"
 source build/envsetup.sh
 echo "============="
 
+# Make cleaninstall
+make installclean
+echo "============="
+
 
 # Build
 brunch RM6785
