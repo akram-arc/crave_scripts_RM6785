@@ -36,6 +36,9 @@ echo "======= Export Done ======"
 source build/envsetup.sh
 echo "============="
 
+# Lunch
+breakfast RM6785
+
 # Make cleaninstall
 make installclean
 echo "============="
