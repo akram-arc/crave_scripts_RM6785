@@ -49,18 +49,20 @@ echo "====================="
 # Export
 export BUILD_USERNAME=Akram 
 export BUILD_HOSTNAME=crave
-echo "======= Export Done ======"
+echo "======= Export Done ======t
 
 
 # Set up build environment
 source build/envsetup.sh
 echo "============="
 
+# Lunch
+lunch lineage_RM6785-bp4a-userdebug
+echo "============="
+
 # Make cleaninstall
 make installclean
 echo "============="
 
-
 # Build
-brunch RM6785
-
+m bacon
