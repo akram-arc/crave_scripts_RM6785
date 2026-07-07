@@ -49,7 +49,7 @@ echo "====================="
 # Export
 export BUILD_USERNAME=Akram 
 export BUILD_HOSTNAME=crave
-echo "======= Export Done ======t
+echo "======= Export Done ======="
 
 
 # Set up build environment
