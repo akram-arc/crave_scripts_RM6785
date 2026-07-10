@@ -1,7 +1,7 @@
 #!/bin/bash
 
 rm -rf .repo/local_manifests/
-
+rm -rf vendor/gms
 
 # Local TimeZone
 sudo rm -rf /etc/localtime
@@ -57,7 +57,7 @@ source build/envsetup.sh
 echo "============="
 
 # Lunch
-lunch lineage_RM6785-bp4a-userdebug
+lunch lineage_nemo-bp4a-userdebug
 echo "============="
 
 # Make cleaninstall
