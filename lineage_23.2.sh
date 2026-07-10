@@ -57,7 +57,7 @@ source build/envsetup.sh
 echo "============="
 
 # Lunch
-lunch lineage_nemo-bp4a-userdebug
+breakfast nemo
 echo "============="
 
 # Make cleaninstall
@@ -65,4 +65,4 @@ make installclean
 echo "============="
 
 # Build
-m bacon
+brunch nemo
