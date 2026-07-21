@@ -62,7 +62,7 @@ source build/envsetup.sh
 echo "============="
 
 # Lunch
-breakfast RM6785
+breakfast nemo
 echo "============="
 
 # Make cleaninstall
@@ -70,4 +70,4 @@ make installclean
 echo "============="
 
 # Build
-brunch RM6785
+brunch nemo
