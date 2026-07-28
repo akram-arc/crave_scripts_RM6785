@@ -47,6 +47,13 @@ git fetch akram-arc
 git cherry-pick 7f1122ca7fcfacbc3fb2b81500aabe2e84a39ab5
 cd ../../..
 
+# CTS patches
+cd vendor/lineage
+git remote add akram-arc https://github.com/akram-arc/android_vendor_lineage.git 2>/dev/null || true
+git fetch akram-arc
+git cherry-pick 39a3e37c772f9e3803da67625fb818494ce50d43
+cd ../..
+
 echo "====================="
 echo "All Cherry picks Done"
 echo "====================="
