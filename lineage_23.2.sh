@@ -20,10 +20,14 @@ echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone  https://github.com/akram-arc/local_manifests.git .repo/local_manifests
+git clone https://github.com/akram-arc/local_manifests.git .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
+
+echo "============="
+echo "Repo Syncing "
+echo "============="
 
 # Build Sync
 /opt/crave/resync.sh 
@@ -48,6 +52,7 @@ git cherry-pick 7f1122ca7fcfacbc3fb2b81500aabe2e84a39ab5
 cd ../../..
 
 # CTS patches
+echo ">>> Cherry picking CTS patches..."
 cd vendor/lineage
 git remote add akram-arc https://github.com/akram-arc/android_vendor_lineage.git 2>/dev/null || true
 git fetch akram-arc
