@@ -48,7 +48,7 @@ echo ">>> Cherry picking Updater patch..."
 cd packages/apps/Updater
 git remote add akram-arc https://github.com/akram-arc/android_packages_apps_Updater.git 2>/dev/null || true
 git fetch akram-arc
-git cherry-pick 7f1122ca7fcfacbc3fb2b81500aabe2e84a39ab5
+git cherry-pick 73119d3ce53b620ce681cd089cb55a8353caaaf8
 cd ../../..
 
 # CTS patches
@@ -59,6 +59,7 @@ git fetch akram-arc
 git cherry-pick 39a3e37c772f9e3803da67625fb818494ce50d43
 cd ../..
 
+# Locked lk patches
 echo ">>> Cherry picking Locked lk patches..."
 cd system/core
 git remote add akram-arc https://github.com/akram-arc/android_system_core.git 2>/dev/null || true
