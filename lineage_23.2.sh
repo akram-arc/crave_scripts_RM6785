@@ -59,6 +59,14 @@ git fetch akram-arc
 git cherry-pick 39a3e37c772f9e3803da67625fb818494ce50d43
 cd ../..
 
+# Settings Patch
+echo ">>> Cherry picking Settings patch..."
+cd packages/apps/Settings/
+git remote add akram-arc https://github.com/akram-arc/android_packages_apps_Settings.git 2>/dev/null || true
+git fetch akram-arc
+git cherry-pick 92acb38bfc22cbe7ba6cadd3eda44485b12b73ef
+cd ../../..
+
 # Locked lk patches
 echo ">>> Cherry picking Locked lk patches..."
 cd system/core
