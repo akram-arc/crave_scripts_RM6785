@@ -72,7 +72,7 @@ echo ">>> Cherry picking Bash patch..."
 cd frameworks/base
 git remote add akram-arc https://github.com/akram-arc/android_frameworks_base.git 2>/dev/null || true
 git fetch akram-arc
-git cherry-pick 65ce9f45432786159e59bf3b5e7c6cd4fd759271 38cfff20438d0af01cde457c14e0b8eb6638eadd
+git cherry-pick 65ce9f45432786159e59bf3b5e7c6cd4fd759271
 cd ../..
 
 # Launcher Patch
