@@ -64,7 +64,7 @@ echo ">>> Cherry picking Settings patch..."
 cd packages/apps/Settings/
 git remote add akram-arc https://github.com/akram-arc/android_packages_apps_Settings.git 2>/dev/null || true
 git fetch akram-arc
-git cherry-pick 
+git cherry-pick 09c7e531ac25a9fe4f8be41bd026c0ebb4e59200 
 cd ../../..
 
 # Launcher Patch
