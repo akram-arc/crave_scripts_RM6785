@@ -64,15 +64,15 @@ echo ">>> Cherry picking Settings patch..."
 cd packages/apps/Settings/
 git remote add akram-arc https://github.com/akram-arc/android_packages_apps_Settings.git 2>/dev/null || true
 git fetch akram-arc
-git cherry-pick 4159020efff3e07375933aa70433117efb2fac75 66bfc1b3e49ef220e34f7682748a8dd4efe6ff61
+git cherry-pick 4159020efff3e07375933aa70433117efb2fac75 66bfc1b3e49ef220e34f7682748a8dd4efe6ff61 f9a9e9fa512930f16f58e782c1a59b4e5b7c57bb
 cd ../../..
 
 # Base Patch
 echo ">>> Cherry picking Bash patch..."
 cd frameworks/base
-git remote add akram-arc https://github.com/akram-arc/android_frameworks_base.git 2>/dev/null || true
+git remote add akram-arc https://github.com/akram-archive/android_frameworks_base.git 2>/dev/null || true
 git fetch akram-arc
-git cherry-pick 65ce9f45432786159e59bf3b5e7c6cd4fd759271
+git cherry-pick db34acf250b9495fdb243b34642f15eb00a129d0 
 cd ../..
 
 # Launcher Patch
@@ -80,7 +80,7 @@ echo ">>> Cherry picking Settings patch..."
 cd packages/apps/Launcher3
 git remote add akram-arc https://github.com/akram-arc/android_packages_apps_Launcher3.git 2>/dev/null || true
 git fetch akram-arc
-git cherry-pick 46b05b795e084f5c159c7c42346c37d76831baa6
+git cherry-pick 46b05b795e084f5c159c7c42346c37d76831baa6 46dfb0ed6e7b7e5cd00add27ff1fa4051504a2d9
 cd ../../..
 
 # Locked lk patches
