@@ -70,8 +70,8 @@ cd ../../..
 # Base Patch
 echo ">>> Cherry picking Bash patch..."
 cd frameworks/base
-git remote add akram-arc https://github.com/akram-archive/android_frameworks_base.git 2>/dev/null || true
-git fetch akram-arc
+git remote add akram-archive https://github.com/akram-archive/android_frameworks_base.git 2>/dev/null || true
+git fetch akram-archive
 git cherry-pick db34acf250b9495fdb243b34642f15eb00a129d0 
 cd ../..
 
