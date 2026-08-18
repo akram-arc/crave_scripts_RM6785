@@ -104,7 +104,7 @@ echo ">>> Cherry picking LineageParts patches..."
 cd packages/apps/LineageParts
 git remote add akram-arc https://github.com/akram-arc/android_packages_apps_LineageParts.git 2>/dev/null || true
 git fetch akram-arc
-git cherry-pick 9f5d2711d47b250cb8ad6d3a37a33ae5b6c89559 ec1037618a79f40ef0df12e4775b1e996edcfd40 c86a2cc41b27b9011b637d3cdf72576012b133f9 27016f8d69f6605876c4824e07af93c77f2697f4
+git cherry-pick 9f5d2711d47b250cb8ad6d3a37a33ae5b6c89559 ec1037618a79f40ef0df12e4775b1e996edcfd40 c86a2cc41b27b9011b637d3cdf72576012b133f9 ac02cb664d8caab991748822cdef6999d0f444bc
 cd ../../..
 
 echo "====================="
