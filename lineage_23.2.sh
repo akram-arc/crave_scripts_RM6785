@@ -79,6 +79,32 @@ git fetch akram-arc
 git cherry-pick 4d55070a72e649c5d0615b84dc10183463f926a8 d72b2f13cc8906c3de6e22055de7ad8c05410ac3 52bcc2864705ea77f0eb6a6a41756d26943465cd
 cd ../..
 
+# Base patches
+echo ">>> Cherry picking base patches..."
+cd frameworks/base
+git remote add akram-arc https://github.com/akram-arc/android_frameworks_base.git 2>/dev/null || true
+git fetch akram-arc
+git cherry-pick 73fa97a3518017125f126fc67040812323bfa335 792a043e670c731cea03ed1696e6149a81749b11 3f9b219c6fead188c45b80d2e383df38efb4d7fa 8c081f5968186363c3ab58023f702469dcbc8d77 447f0a62546c3f22fe8e8eb1d1e55b6ee08d9ac5 6965945a5a6ef507d3cadfb6bab2bfff11ad8395 f43a152f9f55a3e43558cb36a8e776fa652cbe73 f5f0d84eff618653249f82e8b0a3fdd76b38a90b de27dd28c5eef3157240633e8f68695382f5df2a 5662c466f039614b5beea543a50640976a096309 9dfbbc4f24a14e717673b6475b337e7563b37c9a 1b4dc39a1022b342fd47a7ca7efc11ccef4ddbb3 da1642684cf38e10224b2ecc7a37bde88e16ef55 
+cd ../..
+
+# sdk patches
+echo ">>> Cherry picking sdk patches..."
+cd lineage-sdk
+git remote add akram-arc https://github.com/akram-arc/android_lineage-sdk.git 2>/dev/null || true
+git fetch akram-arc
+git cherry-pick 56816dc1cf7a70e3e3d24bc0ca1df1eb0a13c03c 71b01f0fa9c3b412f22804d9942f53e9a80a40d8 c74fbcfb06c74910e3a767ce91c9bf300cf695fc 9145b247e9b0050375d961468ce433d697c3d550 fe58f079419a4c00677c4fc64debb0316b1c2036
+cd ..
+
+# LineageParts patches
+echo ">>> Cherry picking LineageParts patches..."
+cd packages/apps/LineageParts
+git remote add akram-arc https://github.com/akram-arc/android_packages_apps_LineageParts.git 2>/dev/null || true
+git fetch akram-arc
+git cherry-pick 9f5d2711d47b250cb8ad6d3a37a33ae5b6c89559 ec1037618a79f40ef0df12e4775b1e996edcfd40 c86a2cc41b27b9011b637d3cdf72576012b133f9 ac02cb664d8caab991748822cdef6999d0f444bc
+cd ../../..
+
+
+
 # Export
 export BUILD_USERNAME=Akram 
 export BUILD_HOSTNAME=crave
