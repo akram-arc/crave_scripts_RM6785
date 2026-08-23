@@ -1,6 +1,13 @@
 #!/bin/bash
 
 rm -rf .repo/local_manifests/
+rm -rf .repo/local_manifests/
+rm -rf vendor/gms
+rm -rf device/realme
+rm -rf kernel/realme
+rm -rf vendor/realme/RM6785
+rm -rf device/mediatek/sepolicy_vndr
+rm -rf hardware/mediatek
 
 # repo init rom
 repo init -u https://github.com/LineageOS/android.git -b lineage-23.2 --git-lfs
