@@ -47,6 +47,14 @@ git fetch akram-arc
 git cherry-pick 73119d3ce53b620ce681cd089cb55a8353caaaf8
 cd ../../..
 
+# CTS patches
+echo ">>> Cherry picking CTS patches..."
+cd vendor/lineage
+git remote add akram-arc https://github.com/akram-arc/android_vendor_lineage.git 2>/dev/null || true
+git fetch akram-arc
+git cherry-pick 39a3e37c772f9e3803da67625fb818494ce50d43
+cd ../..
+
 # Export
 export BUILD_USERNAME=Akram 
 export BUILD_HOSTNAME=crave
