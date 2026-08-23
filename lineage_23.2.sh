@@ -39,6 +39,14 @@ git fetch akram-arc
 git cherry-pick e1324be91d82c47cd632dc0cbeaeedcfcbd11c80 1d6ac760928140d361c23b2ca2862622d9ab9e78 c8db8c1671ee9bf4f8409a5c7c565acb47dfd053 3748303946dee31bf0d3e8dfb3bc2085cb533c21
 cd ../..
 
+# Updater Patch
+echo ">>> Cherry picking Updater patch..."
+cd packages/apps/Updater
+git remote add akram-arc https://github.com/akram-arc/android_packages_apps_Updater.git 2>/dev/null || true
+git fetch akram-arc
+git cherry-pick 73119d3ce53b620ce681cd089cb55a8353caaaf8
+cd ../../..
+
 # Export
 export BUILD_USERNAME=Akram 
 export BUILD_HOSTNAME=crave
