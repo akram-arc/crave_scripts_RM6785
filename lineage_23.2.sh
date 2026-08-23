@@ -71,6 +71,14 @@ git fetch akram-arc
 git cherry-pick a83ee9ce71c49e860c90c7cd17accc3834811e9e a7412e9affdc139b9fd3ae1e2b6577cd7d335540
 cd ../../..
 
+# Locked lk patches
+echo ">>> Cherry picking Locked lk patches..."
+cd system/core
+git remote add akram-arc https://github.com/akram-arc/android_system_core.git 2>/dev/null || true
+git fetch akram-arc
+git cherry-pick 4d55070a72e649c5d0615b84dc10183463f926a8 d72b2f13cc8906c3de6e22055de7ad8c05410ac3 52bcc2864705ea77f0eb6a6a41756d26943465cd
+cd ../..
+
 # Export
 export BUILD_USERNAME=Akram 
 export BUILD_HOSTNAME=crave
