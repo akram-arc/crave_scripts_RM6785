@@ -55,6 +55,14 @@ git fetch akram-arc
 git cherry-pick 39a3e37c772f9e3803da67625fb818494ce50d43
 cd ../..
 
+# Settings Patch
+echo ">>> Cherry picking Settings patch..."
+cd packages/apps/Settings/
+git remote add akram-arc https://github.com/akram-arc/android_packages_apps_Settings.git 2>/dev/null || true
+git fetch akram-arc
+git cherry-pick 09c7e531ac25a9fe4f8be41bd026c0ebb4e59200
+cd ../../..
+
 # Export
 export BUILD_USERNAME=Akram 
 export BUILD_HOSTNAME=crave
