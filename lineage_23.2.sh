@@ -7,6 +7,7 @@ rm -rf kernel/realme
 rm -rf vendor/realme
 rm -rf device/mediatek/sepolicy_vndr
 rm -rf hardware/mediatek
+rm -rf .repo/project-objects/
 
 # Local TimeZone
 sudo rm -rf /etc/localtime
