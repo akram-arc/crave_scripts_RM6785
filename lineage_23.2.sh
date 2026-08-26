@@ -3,13 +3,13 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init -u https://github.com/LineageOS/android.git -b lineage-23.2 --git-lfs
+repo init --depth=1 -u https://github.com/LineageOS/android.git -b lineage-23.2 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone  https://github.com/akram-arc/local_manifests.git .repo/local_manifests
+git clone https://github.com/realme-mt6785-devs/local_manifests.git .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
