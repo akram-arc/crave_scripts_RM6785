@@ -117,6 +117,10 @@ echo "============="
 # Lunch
 breakfast RM6785
 
+# Make cleaninstall
+make installclean
+echo "============="
+
 # Build
 brunch RM6785
 
