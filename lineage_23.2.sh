@@ -7,6 +7,7 @@ rm -rf kernel/realme
 rm -rf vendor/realme/RM6785
 rm -rf device/mediatek/sepolicy_vndr
 rm -rf hardware/mediatek
+rm -rf vendor/oppo/camera
 
 # Local TimeZone
 sudo rm -rf /etc/localtime
@@ -102,6 +103,13 @@ git fetch akram-arc
 git cherry-pick 9f5d2711d47b250cb8ad6d3a37a33ae5b6c89559 ec1037618a79f40ef0df12e4775b1e996edcfd40 c86a2cc41b27b9011b637d3cdf72576012b133f9 ac02cb664d8caab991748822cdef6999d0f444bc
 cd ../../..
 
+# Soong patches
+echo ">>> Cherry picking Soong patches..."
+cd build/soong
+git remote add akram-arc https://github.com/akram-arc/android_build_soong.git 2>/dev/null || true
+git fetch akram-arc
+git cherry-pick 8aabb97294d0caf99ec90b3677c4b81580faddf4
+cd ../..
 
 
 # Export
