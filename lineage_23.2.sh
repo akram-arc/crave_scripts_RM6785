@@ -7,6 +7,7 @@ rm -rf kernel/realme
 rm -rf vendor/realme/RM6785
 rm -rf device/mediatek/sepolicy_vndr
 rm -rf hardware/mediatek
+rm -rf vendor/oppo/camera/
 
 # Local TimeZone
 sudo rm -rf /etc/localtime
