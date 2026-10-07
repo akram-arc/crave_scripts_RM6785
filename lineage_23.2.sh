@@ -4,7 +4,7 @@ rm -rf .repo/local_manifests/
 rm -rf vendor/gms
 rm -rf device/realme
 rm -rf kernel/realme
-rm -rf vendor/realme/RM6785
+rm -rf vendor/realme
 rm -rf device/mediatek/sepolicy_vndr
 rm -rf hardware/mediatek
 rm -rf vendor/oppo/camera
@@ -20,7 +20,7 @@ echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone  https://github.com/akram-arc/local_manifests.git .repo/local_manifests
+git clone https://github.com/akram-arc/local_manifests.git .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -123,12 +123,12 @@ source build/envsetup.sh
 echo "============="
 
 # Lunch
-breakfast RM6785
+breakfast nemo
 
 # Make cleaninstall
 make installclean
 echo "============="
 
 # Build
-brunch RM6785
+brunch nemo
 
